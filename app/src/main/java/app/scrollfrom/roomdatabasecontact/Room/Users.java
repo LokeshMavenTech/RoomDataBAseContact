@@ -1,4 +1,4 @@
-package app.scrollfrom.roomdatabasecontact;
+package app.scrollfrom.roomdatabasecontact.Room;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

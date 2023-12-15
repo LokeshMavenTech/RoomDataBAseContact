@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import app.scrollfrom.roomdatabasecontact.Room.UserDao;
+import app.scrollfrom.roomdatabasecontact.Room.UserDatabase;
+import app.scrollfrom.roomdatabasecontact.Room.Users;
+
 public class UpdateActivity extends AppCompatActivity {
 private EditText etname,etno;
 private Button btnUpdate;
@@ -19,7 +23,7 @@ private UserDao userDao;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
 
-         userDatabase=UserDatabase.getINSTANCE(this);
+         userDatabase= UserDatabase.getINSTANCE(this);
          userDao=userDatabase.getDao();
 
 

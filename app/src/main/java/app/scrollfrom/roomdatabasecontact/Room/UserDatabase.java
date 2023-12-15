@@ -1,4 +1,4 @@
-package app.scrollfrom.roomdatabasecontact;
+package app.scrollfrom.roomdatabasecontact.Room;
 
 import android.content.Context;
 
@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {Users.class},version = 3)
+@Database(entities = {Users.class},version = 1)
 public abstract class UserDatabase extends RoomDatabase {
     public abstract UserDao getDao();
     public static UserDatabase INSTANCE;

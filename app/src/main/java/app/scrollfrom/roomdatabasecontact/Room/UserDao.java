@@ -1,7 +1,6 @@
-package app.scrollfrom.roomdatabasecontact;
+package app.scrollfrom.roomdatabasecontact.Room;
 
 import androidx.room.Dao;
-import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;

@@ -10,6 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
+//import app.scrollfrom.roomdatabasecontact.Room.Users;
+
+import app.scrollfrom.roomdatabasecontact.Room.Users;
 
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> {
@@ -29,6 +32,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
      }
      public void removeUser(int position){
         usersList.remove(position);
+        notifyDataSetChanged();
+     }
+     public void clearData(){
+        usersList.clear();
         notifyDataSetChanged();
      }
     @NonNull

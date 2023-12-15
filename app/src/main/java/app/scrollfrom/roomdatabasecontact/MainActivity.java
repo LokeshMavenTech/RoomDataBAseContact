@@ -13,6 +13,10 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import app.scrollfrom.roomdatabasecontact.Room.UserDao;
+import app.scrollfrom.roomdatabasecontact.Room.UserDatabase;
+import app.scrollfrom.roomdatabasecontact.Room.Users;
+
 public class MainActivity extends AppCompatActivity implements AdapeterListener{
     EditText etname, etno;
     Button btnInsert;
@@ -57,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements AdapeterListener{
 
     }
     private void fetchData(){
+    userAdapter.clearData();
         List<Users> usersList=userDao.getAllUsers();
         for(int i=0;i<usersList.size();i++){
             Users users=usersList.get(i);
